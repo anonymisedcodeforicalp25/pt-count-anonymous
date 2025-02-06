@@ -122,7 +122,7 @@ def gen_ptc_rows(k: int, tree: Graph, comp: Composition) -> Iterable[PermInt]:
             continue
         for perm_y in Permutations(k):
             # The pattern formed by this ordering is the composition
-            # of y-ordering on the inverse of x-ordering (see Lemma 3.5).
+            # of y-ordering on the inverse of x-ordering (see Lemma 3.6).
             p = perm_y.left_action_product(perm_x.inverse())
 
             # Conditioned on the given tree structure and vertex sizes,
